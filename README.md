@@ -22,4 +22,4 @@ Written and developed by Ben Keeling
 
 Art and design by James Gething and Ben Keeling
 
-Special thanks to: Warren Livingstone, Harry Gething, Stanze Moody, and of course, the rest of 388 squadon for contributing to, and featuring in the project.
+Special thanks to: Warren Livingstone, Harry Gething and Stanze Moody for their phenomenal efforts on the project, and of course, the rest of 388 squadon for contributing to, and featuring in the project.
