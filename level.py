@@ -43,7 +43,7 @@ class Level:
                             if col == "0":
                                 npc_abe = NPC((x, y), [self.visible_sprites, self.npc_sprites], "Abe.png", "abe")
                                 print(col)
-                            if col == "1":
+                            if col == "11":
                                 npc_ben = NPC((x, y), [self.visible_sprites, self.npc_sprites], "ben.png", "ben")
                                 print(col)
                             if col == "2":
@@ -52,7 +52,7 @@ class Level:
                             if col == "3":
                                 npc_archie = NPC((x, y), [self.visible_sprites, self.npc_sprites], "archie.png", "archie")
                                 print(col)
-                            if col == "4":
+                            if col == "7":
                                 npc_cowdrey = NPC((x, y), [self.visible_sprites, self.npc_sprites], "cowdrey.png", "cowdrey")
                                 print(col)
                             if col == "5":
@@ -61,7 +61,7 @@ class Level:
                             if col == "6":
                                 npc_izaac = NPC((x, y), [self.visible_sprites, self.npc_sprites], "izaac.png", "izaac")
                                 print(col)
-                            if col == "7":
+                            if col == "4":
                                 npc_james = NPC((x, y), [self.visible_sprites, self.npc_sprites], "james.png", "james")
                             if col == "8":
                                 npc_beaver = NPC((x, y), [self.visible_sprites, self.npc_sprites], "archie.png", "beaver")
@@ -69,7 +69,7 @@ class Level:
                                 npc_sikes = NPC((x, y), [self.visible_sprites, self.npc_sprites], "cowdrey.png", "sikes")
                             if col == "10":
                                 npc_warren = NPC((x, y), [self.visible_sprites, self.npc_sprites], "declan.png", "warren")
-                            if col == "11":
+                            if col == "1":
                                 npc_adrian = NPC((x, y), [self.visible_sprites, self.npc_sprites], "ben.png", "adrian")
                                 print(col)
         self.player = Player((1344, 2944), [self.visible_sprites], self.obstacles_sprites)

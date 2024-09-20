@@ -32,6 +32,8 @@ class NPC(pygame.sprite.Sprite):
             self.dialogue = read_file_to_list("characters/npc_scripts/"+name+".txt")
         if name == "adrian":
             self.dialogue = read_file_to_list("characters/npc_scripts/"+name+".txt")
+        if name == "warren":
+            self.dialogue = read_file_to_list("characters/npc_scripts/" + name + ".txt")
 
     def update(self):
         pass
