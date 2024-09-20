@@ -11,6 +11,12 @@ You explore the squadron, and talk to the NCOs and cadets that attend the squadr
  - Press the space bar to advance through the dialog
  - At any time, press the escape key to exit dialog
 
+## To run
+- Download and extract the code
+- Run main.py
+
+- **Important: do not change the file structure or the game will not run**
+
 ## Credits
 Written and developed by Ben Keeling
 
