@@ -26,15 +26,6 @@ def import_folder(path):
 
 
 def read_file_to_list(file_path):
-    """
-    Reads a text file and returns a list of its lines.
-
-    Args:
-        file_path (str): The path to the text file.
-
-    Returns:
-        list: A list where each element is a line from the file.
-    """
     lines = []
     try:
         with open(file_path, 'r') as file:

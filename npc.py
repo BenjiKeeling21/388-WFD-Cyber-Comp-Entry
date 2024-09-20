@@ -35,20 +35,8 @@ class NPC(pygame.sprite.Sprite):
         if name == "warren":
             self.dialogue = read_file_to_list("characters/npc_scripts/" + name + ".txt")
 
-    def update(self):
-        pass
 
     def interact(self):
         # Function to handle interaction
         return self.dialogue
 
-
-
-
-'''npc_archie = NPC((300, 200), [self.visible_sprites, self.npc_sprites], "archie.png")
-        npc_ben = NPC((300, 200), [self.visible_sprites, self.npc_sprites], "ben.png")
-        npc_cowdrey = NPC((300, 200), [self.visible_sprites, self.npc_sprites], "cowdrey.png")
-        npc_declan = NPC((300, 200), [self.visible_sprites, self.npc_sprites], "declan.png")
-        npc_ella = NPC((300, 200), [self.visible_sprites, self.npc_sprites], "ella.png")
-        npc_izaac = NPC((300, 200), [self.visible_sprites, self.npc_sprites], "izaac.png")
-        npc_james = NPC((300, 200), [self.visible_sprites, self.npc_sprites], "james.png")'''

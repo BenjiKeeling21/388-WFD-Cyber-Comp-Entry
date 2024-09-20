@@ -42,25 +42,18 @@ class Level:
                         if style == "characters":
                             if col == "0":
                                 npc_abe = NPC((x, y), [self.visible_sprites, self.npc_sprites], "Abe.png", "abe")
-                                print(col)
                             if col == "11":
                                 npc_ben = NPC((x, y), [self.visible_sprites, self.npc_sprites], "ben.png", "ben")
-                                print(col)
                             if col == "2":
                                 npc_declan = NPC((x, y), [self.visible_sprites, self.npc_sprites], "declan.png", "declan")
-                                print(col)
                             if col == "3":
                                 npc_archie = NPC((x, y), [self.visible_sprites, self.npc_sprites], "archie.png", "archie")
-                                print(col)
                             if col == "7":
                                 npc_cowdrey = NPC((x, y), [self.visible_sprites, self.npc_sprites], "cowdrey.png", "cowdrey")
-                                print(col)
                             if col == "5":
                                 npc_ella = NPC((x, y), [self.visible_sprites, self.npc_sprites], "ella.png", "ella")
-                                print(col)
                             if col == "6":
                                 npc_izaac = NPC((x, y), [self.visible_sprites, self.npc_sprites], "izaac.png", "izaac")
-                                print(col)
                             if col == "4":
                                 npc_james = NPC((x, y), [self.visible_sprites, self.npc_sprites], "james.png", "james")
                             if col == "8":
@@ -71,8 +64,7 @@ class Level:
                                 npc_warren = NPC((x, y), [self.visible_sprites, self.npc_sprites], "declan.png", "warren")
                             if col == "1":
                                 npc_adrian = NPC((x, y), [self.visible_sprites, self.npc_sprites], "ben.png", "adrian")
-                                print(col)
-        self.player = Player((1344, 2944), [self.visible_sprites], self.obstacles_sprites)
+        self.player = Player((1344, 2700), [self.visible_sprites], self.obstacles_sprites)
 
 
     def run(self):
@@ -95,17 +87,15 @@ class Level:
         mouse_click = pygame.mouse.get_pressed()  # Get mouse button status
 
         if mouse_click[0]:  # Left click
-            print(f"Mouse clicked at: {mouse_pos}")  # Debugging
+
 
             for npc in self.npc_sprites:
                 # Calculate NPC’s screen position considering camera offset
                 npc_screen_pos = npc.rect.topleft - self.visible_sprites.offset
                 if pygame.Rect(npc_screen_pos, npc.rect.size).collidepoint(mouse_pos):
-                    print(f"NPC clicked: {npc}")  # Debugging
                     self.current_dialogue = npc.interact()
                     self.dialogue_index = 0
                     self.dialogue_box = True  # Display dialogue box
-                    print(f"Dialogue triggered: {self.current_dialogue}")
                     return  # Exit after the first successful click
 
     def display_dialogue(self):
